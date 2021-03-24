@@ -15,6 +15,7 @@ if( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+use Display\Viewers\Frontend\Counter;
 require_once __DIR__ . '/vendor/autoload.php';
 
 /**
@@ -65,7 +66,7 @@ final class Display_Post_View_Count {
      * @return void
      */
     public static function wd_dpvc_init_plugin() {
-        new Counter;
+        new Counter();
     }
 
     /**
